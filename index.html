@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charles Bukowski - Página Personal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            padding-top: 56px; /* Ajustar el espacio para el navbar fijo */
+        }
+        .navbar {
+            transition: all 0.3s ease;
+        }
+        .navbar.scrolled {
+            background-color: #343a40; /* Fondo oscuro para el navbar cuando se desplaza */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para el navbar */
+        }
+        .navbar-brand {
+            padding-left: 1rem; /* Espaciado a la izquierda para el navbar-brand */
+            padding-right: 1rem; /* Espaciado a la derecha para el navbar-brand */
+        }
+        .navbar-nav {
+            margin-left: 1rem; /* Separar opciones del margen izquierdo en dispositivos móviles */
+        }
+        .navbar-nav .nav-link {
+            transition: color 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            color: #ffc107; /* Color de hover para los enlaces */
+        }
+        .hero-section {
+            background: url("images/hero_image.png") no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .section-title {
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .card img {
+            object-fit: cover;
+            height: 200px; /* Altura fija para las imágenes de las tarjetas */
+        }
+        .card {
+            margin-bottom: 1.5rem; /* Separar tarjetas verticalmente */
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Bukowski</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#interests">Intereses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero-section">
+        <div class="container">
+            <h1>Charles Bukowski</h1>
+            <p>Poeta, Novelista, y Cronista del Submundo</p>
+        </div>
+    </header>
+
+    <!-- Biografía -->
+    <section id="about" class="container">
+        <div class="section-title">
+            <h2>Sobre Charles Bukowski</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Charles Bukowski fue un escritor y poeta estadounidense conocido por sus relatos sobre la vida de los marginados en la sociedad. Su estilo se caracteriza por un lenguaje crudo y directo, y una visión pesimista de la vida.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/bukowski.jpeg" class="img-fluid rounded" alt="Charles Bukowski" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Intereses -->
+    <section id="interests" class="bg-light py-5">
+        <div class="container">
+            <div class="section-title">
+                <h2>Intereses</h2>
+            </div>
+            <div class="accordion" id="interestsAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Literatura
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#interestsAccordion">
+                        <div class="accordion-body">
+                            Bukowski tuvo un interés profundo en la literatura desde joven. Sus obras exploran temas de desesperanza, amor y la vida en los márgenes de la sociedad.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Arte
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#interestsAccordion">
+                        <div class="accordion-body">
+                            Además de la escritura, Bukowski también tuvo interés en el arte visual, incluyendo la pintura y el dibujo.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Música
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#interestsAccordion">
+                        <div class="accordion-body">
+                            Bukowski también tenía una gran afinidad por la música, especialmente el jazz y el blues, que reflejan su estilo literario.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="container py-5">
+        <div class="section-title">
+            <h2>Hobbies</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/Charles-Bukowski.jpg" class="card-img-top" alt="Hobby 1" />
+                    <div class="card-body">
+                        <h5 class="card-title">Escritura</h5>
+                        <p class="card-text">Además de su carrera literaria, Bukowski disfrutaba escribir en su tiempo libre, explorando temas y estilos diversos.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/charles-bukowski.webp" class="card-img-top" alt="Hobby 2" />
+                    <div class="card-body">
+                        <h5 class="card-title">Pintura</h5>
+                        <p class="card-text">Bukowski experimentó con la pintura, creando obras que reflejan su visión cruda y personal del mundo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="images/bukowski_drinking.jpg" class="card-img-top" alt="Hobby 3" />
+                    <div class="card-body">
+                        <h5 class="card-title">Cerveza</h5>
+                        <p class="card-text">Uno de sus pasatiempos favoritos era disfrutar de una buena cerveza, algo que también está presente en sus escritos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Contacto -->
+        <section id="contact" class="bg-dark text-light py-5">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                Email:
+                                <a href="mailto:charles.bukowski@email.com" class="text">charles.bukowski@email.com</a>
+                            </li>
+                            <li class="list-group-item">Teléfono: +57 314 567 8980</li>
+                            <li class="list-group-item">Dirección: 123 Bukowski St, Los Angeles, CA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Enviar Mensaje</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                                <input type="text" class="form-control" id="recipient-name" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Mensaje:</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Footer -->
+        <footer class="bg-dark text-light text-center py-3">
+            <p>&copy; 2024 Charles Bukowski. Todos los derechos reservados.</p>
+        </footer>
+    
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+        <script>
+            // Se agrega la clase 'scrolled' al navbar cuando el usuario se desplaza hacia abajo
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+        </script>
+    </body>
+    </html>
+    
